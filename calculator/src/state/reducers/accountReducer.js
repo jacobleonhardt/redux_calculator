@@ -4,6 +4,12 @@ const reducer = (state = 0, action) => {
       return state + action.payload
     case "subtract":
       return state - action.payload
+    case "multiply":
+      return state * action.payload
+    case "divide":
+      return state / action.payload
+    case "reset":
+      return state = 0
     default:
       return state
   }

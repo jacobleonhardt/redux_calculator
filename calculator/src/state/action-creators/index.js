@@ -15,3 +15,30 @@ export const subtractAmount = (amount) => {
     })
   }
 }
+
+export const multiplyAmount = (amount) => {
+  return (dispatch) => {
+    dispatch({
+      type: "multiply",
+      payload: amount,
+    })
+  }
+}
+
+export const divideAmount = (amount) => {
+  return (dispatch) => {
+    dispatch({
+      type: "divide",
+      payload: amount,
+    })
+  }
+}
+
+export const resetAmount = (amount) => {
+  return (dispatch) => {
+    dispatch({
+      type: "reset",
+      payload: amount,
+    })
+  }
+}
